@@ -62,6 +62,21 @@ alert("Awesome")
         } else {
             alert("Oops" + "this month your expenditure was more than income." + "What happened?")
         }
-    })
 
+        
+            $("#salary").val("");
+            $("#wages").val("");
+            $("#bizna").val("");
+            $("#bonus").val("");
+            $("#others1").val("");
+            $("#rent").val("");
+            $("#food").val("");
+            $("#medical").val("");
+            $("#fees").val("");
+            $("#entertain").val("");
+            $("#others").val("");
+    
+    })
+   
 })
+
