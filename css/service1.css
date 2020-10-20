@@ -21,7 +21,7 @@
     margin-top: 15px;
   }
   
-  #income, #expenditure{
+  #income{
     background-color: #DEDBBA;
     box-shadow: 5px 5px 2.5px #535233;
     border: 1px solid;
@@ -32,9 +32,7 @@
     text-align: center;
   }
   
-  /* #income{
-    float:left;
-  } */
+
   
   
   h4 {

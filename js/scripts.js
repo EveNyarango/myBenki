@@ -1,50 +1,67 @@
-// income 
-let add1 = function (salary, wages, business, bonus, others) {
-    return salary + wages + business + bonus + others
+function Income(salary, wages, business, bonus, others) {
+    this.salary = salary
+    this.wages = wages
+    this.business = business
+    this.bonus = bonus
+    this.others = others
 }
+
+Income.prototype.TotalIncome = function () {
+    return this.salary + this.wages + this.bonus + this.business + this.others
+}
+
+function Expenditure(rent, food, medical, fees, entertainment, others2) {
+    this.rent = rent
+    this.food = food
+    this.medical = medical
+    this.fees = fees
+    this.entertainment = entertainment
+    this.others2 = others2
+}
+Expenditure.prototype.TotalExpenditure = function () {
+    return this.rent + this.food + this.medical + this.fees + this.entertainment + this.others2
+}
+
 
 $(document).ready(function () {
 
     $('#income').submit(function (event) {
         event.preventDefault();
         let nameInput = $('#name').val();
-       
+
         let salary = parseInt($("#salary").val());
         let wages = parseInt($("#wages").val());
         let business = parseInt($("#bizna").val());
         let bonus = parseInt($("#bonus").val());
         let others = parseInt($("#others1").val());
-        let result = add1(salary, wages, business, bonus, others);
-        alert(result);
-        
-    })
+    
 
-})
+        let NewIncome = new Income(salary, wages, business, bonus, others);
+        let NewTotalIncome = NewIncome.TotalIncome()
+        alert(NewTotalIncome)
 
-// Expenditure
-let add = function (rent, food, medical, fees, entertainment, others2) {
-    return rent + food + medical + fees + entertainment + others2
-}
-
-$(document).ready(function () {
-    $('#expenditure').submit(function (event) {
-        event.preventDefault();
         let rent = parseInt($("#rent").val());
         let food = parseInt($("#food").val());
         let medical = parseInt($("#medical").val());
         let fees = parseInt($("#fees").val());
         let entertainment = parseInt($("#entertain").val());
         let others2 = parseInt($("#others2").val());
-        // alert(others2)
-        let result2 = add(rent, food, medical, fees, entertainment, others2);
-        alert(result2)
-    })
-})
 
-// alerts expense 
-if(add1 >= add){
-    // event.preventDefault();
-alert("Thank you")
-}else{
-    alert("sorry")
-}
+        let NewExpenditure = new Expenditure(rent, food, medical, fees, entertainment, others2)
+        let NewTotalExpenditure = NewExpenditure.TotalExpenditure()
+        alert(NewTotalExpenditure)
+
+
+
+
+        if (NewTotalIncome > NewTotalExpenditure) {
+
+            alert("Congratulations " + "your expenditure for this month " + "less than your income." + " You have more to saves " + " for future ")
+        } else if (NewTotalIncome == NewTotalExpenditure) {
+alert("Awesome")
+        } else {
+            alert("Oops" + "this month your expenditure was more than income." + "What happened?")
+        }
+    })
+
+})
