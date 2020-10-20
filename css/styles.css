@@ -17,3 +17,10 @@ button:hover{
 button{
     color: black;
 }
+.row h2{
+    text-align: center;
+    padding: 15px;
+}
+.row{
+    display: inline;
+}
