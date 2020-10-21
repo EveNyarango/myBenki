@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     $('#income').submit(function (event) {
         event.preventDefault();
-        let nameInput = $('#name').val();
+        let month = $("#month").val();
 
         let salary = parseInt($("#salary").val());
         let wages = parseInt($("#wages").val());
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
         let NewIncome = new Income(salary, wages, business, bonus, others);
         let NewTotalIncome = NewIncome.TotalIncome()
-        alert("Your total income is " + NewTotalIncome)
+        alert("Your total income for the month of " + month + " is " + NewTotalIncome)
 
         let rent = parseInt($("#rent").val());
         let food = parseInt($("#food").val());
@@ -49,7 +49,8 @@ $(document).ready(function () {
 
         let NewExpenditure = new Expenditure(rent, food, medical, fees, entertainment, others2)
         let NewTotalExpenditure = NewExpenditure.TotalExpenditure()
-        alert("Your total expenditure is " + NewTotalExpenditure)
+        // alert("Your total expenditure is " + NewTotalExpenditure)
+        alert("Your total expenditure for the month of " + month + " is " + NewTotalExpenditure)
 
 
 
