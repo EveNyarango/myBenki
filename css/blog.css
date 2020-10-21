@@ -3,35 +3,37 @@ body{
    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    
-    color: black;
+     color: black;
     
 
 }
 
 h1{
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    
+    color:turquoise;
 }
 h2{
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    
+    color:turquoise;
 }
 
 .blog{
     display: inline;
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+
+    
     
 }
 
 p{
-    font-family: 'Orbitron', sans-serif;
+    
     text-align: center;
 }
 
 h5{
-    color: red;
+    color:turquoise;
 
 }
 
