@@ -38,7 +38,7 @@ $(document).ready(function () {
 
         let NewIncome = new Income(salary, wages, business, bonus, others);
         let NewTotalIncome = NewIncome.TotalIncome()
-        alert(NewTotalIncome)
+        alert("Your total income is "  + NewTotalIncome)
 
         let rent = parseInt($("#rent").val());
         let food = parseInt($("#food").val());
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
         let NewExpenditure = new Expenditure(rent, food, medical, fees, entertainment, others2)
         let NewTotalExpenditure = NewExpenditure.TotalExpenditure()
-        alert(NewTotalExpenditure)
+        alert("Your total expenditure is " +  NewTotalExpenditure)
 
 
 
@@ -74,7 +74,7 @@ alert("Awesome")
             $("#medical").val("");
             $("#fees").val("");
             $("#entertain").val("");
-            $("#others").val("");
+            $("#others2").val("");
     
     })
    
