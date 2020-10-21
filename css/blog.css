@@ -1,0 +1,42 @@
+body{
+   background-image: url(/images/bank\ 1.jpeg);
+   background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+     color: black;
+    
+
+}
+
+h1{
+    text-align: center;
+    
+    color:turquoise;
+}
+h2{
+    text-align: center;
+    
+    color:turquoise;
+}
+
+.blog{
+    display: inline;
+    text-align: center;
+
+    
+    
+}
+
+p{
+    
+    text-align: center;
+}
+
+h5{
+    color:turquoise;
+
+}
+
+p span{
+    color: white;
+}
