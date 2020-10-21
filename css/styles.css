@@ -1,0 +1,14 @@
+.home {
+    background-image: url(../images/bennete.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+    color: turquoise;
+    font-size: medium;
+}
