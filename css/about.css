@@ -1,0 +1,12 @@
+.about,.vision,.mission{
+    text-align: center;
+}
+.pics{
+    display: inline-block;
+}
+#team{
+    text-align: center;
+}
+.container{
+    background-color: turquoise;
+}
