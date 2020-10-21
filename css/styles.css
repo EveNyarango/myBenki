@@ -10,6 +10,9 @@ header{
     text-align: left;
     font-size: 24px;
 }
+.image{
+    text-align: center;
+}
 button:hover{
     color:blue;
     cursor: pointer;
