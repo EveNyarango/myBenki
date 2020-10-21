@@ -5,12 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myBenki</title>
-    <link rel='stylesheet' href='css/bootstrap.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/service1.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
     <div class="container-fluid">
+        <nav class="navbar navbar-inverse bg-white">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <div class="log">
+                  <a class="navbar-brand" href="index.html">myBenki</a>
+                <img src="./images/logo.png" alt="" height="40px">
+                         </div>
+                
+              </div>
+              </li>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+    
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Services<span
+                      class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="service1.html">Track finances</a></li>
+                    <li><a href="booking.html">Book for training</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#form"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#form"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
         <div class="page-header">
             <h1>Track your finances </h1>
         </div>
@@ -18,8 +50,8 @@
         <br>
         <div class= "intro">
 <h2>Hi there,</h2>
-<p>Below is an interesting exercise that will help you track your income.</p>
-<p>Have fun in feeding the data and getting to know your finance position at the end of month. </p>
+<p class="par">Below is an interesting exercise that will help you track your income.</p>
+<p class="par">Have fun in feeding the data and getting to know your finance position at the end of month. </p>
 </div>
         <form id="income">
         <div class="row">
@@ -117,9 +149,28 @@
             <h3><span class="name"></span> Your current account balance is $.<span class="accountBalance"></span>
             </h3>
         </div>
-
+        <div class="contacts">
+            <h2>Contacts</h2>
+            <h3>Follow myBenki for great budgeting ideas</h2>
+              <div id="contacts">
+                <h3> Feel free to contact us</h3>
+                <br>
+                <ul>
+                  <li><a href="" target="_blank"><img src="./images/facebook__1_.png" alt=""></a></li>
+                  <li><a href="" target="_blank"><img src="./images/twitter (1).png" alt="">
+                    </a></li>
+                  <li><a href="" target="_blank"><img src="images/gmail.png" alt="">
+                    </a></li>
+                  <li><a href=""><img src="images/instagram.png" alt=""></a></li>
+                  <li><a href="https://goo.gl/maps/Cc9oF6igdsTWxyoR6">
+                      <img src="./images/whatsapp__1_.png" alt=""></a></li>
+                </ul>
+              </div>
+              <p>Alright reserved by myBenki @2020 </p>
+          </div>
 
     </div>
+    
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">

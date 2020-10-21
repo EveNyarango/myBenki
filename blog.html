@@ -4,13 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+   
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/blog.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
     <title>my-benki</title>
 </head>
 
-<body>
+<body class="container-fluid">
+    <section class="nav">
+        <nav class="navbar navbar-inverse bg-white">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="log">
+                        <a class="navbar-brand" href="index.html">myBenki</a>
+                        <img src="./images/logo.png" alt="" height="40px">
+                    </div>
+
+                </div>
+                </li>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service1.html">Track finances</a></li>
+                            <li><a href="booking.html">Book for training</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#form"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#form"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
     <div class="blog">
         <div class="container">
             <h1>BLOG</h1>
@@ -24,7 +59,7 @@
                 <div class="card-deck">
 
                     <div class="card" style="width: 18rem;">
-                        <img src="/images/calc.jpeg" class="card-img-top" alt="...">
+                        <img src="./images/calc.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Know How Much You Need</h5>
                             <p class="card-text">You should aim to have enough in your emergency fund to support
@@ -39,7 +74,7 @@
                     <br>
 
                     <div class="card" style="width: 18rem;">
-                        <img src="/images/bank.jpeg" class="card-img-top" alt="...">
+                        <img src="./images/bank.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Create An Account</h5>
                             <p class="card-text">If you’re setting aside money for an emergency, you should make sure
@@ -55,7 +90,7 @@
                     <br>
 
                     <div class="card" style="width: 18rem;">
-                        <img src="/images/account.jpeg" class="card-img-top" alt="...">
+                        <img src="./images/account.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Start Setting Funds Aside</h5>
                             <p class="card-text">There are many creative ways to set money aside for your emergency
@@ -77,7 +112,7 @@
         <br>
         <div class="card-deck">
             <div class="card" style="width: 18rem;">
-                <img src="/images/sam.jpeg" class="card-img-top" alt="...">
+                <img src="./images/sam.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Sam, Nairobi.</h5>
                     <p class="card-text"> “In 7 weeks, under myBenki's expert guidance, I’ve completely changed my
@@ -93,7 +128,7 @@
             </div>
             <br>
             <div class="card" style="width: 18rem;">
-                <img src="/images/joan1.jpeg" class="card-img-top" alt="...">
+                <img src="./images/joan1.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Joan, Mombasa.</h5>
                     <p class="card-text">“i was at a stage where i could not make any traction financially and i was
@@ -107,7 +142,7 @@
 
             <br>
             <div class="card" style="width: 18rem;">
-                <img src="/images/brian.jpeg" class="card-img-top" alt="...">
+                <img src="./images/brian.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Brian, Kampala</h5>
                     <p class="card-text">“myBenki helps you cut through the confusion to understand your spending habits
@@ -124,6 +159,25 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="contacts">
+        <h2>Contacts</h2>
+        <h3>Follow myBenki for great budgeting ideas</h2>
+            <div id="contacts">
+                <h3> Feel free to contact us</h3>
+                <br>
+                <ul>
+                    <li><a href="" target="_blank"><img src="./images/facebook__1_.png" alt=""></a></li>
+                    <li><a href="" target="_blank"><img src="./images/twitter (1).png" alt="">
+                        </a></li>
+                    <li><a href="" target="_blank"><img src="images/gmail.png" alt="">
+                        </a></li>
+                    <li><a href=""><img src="images/instagram.png" alt=""></a></li>
+                    <li><a href="https://goo.gl/maps/Cc9oF6igdsTWxyoR6">
+                            <img src="./images/whatsapp__1_.png" alt=""></a></li>
+                </ul>
+            </div>
+            <p>Alright reserved by myBenki @2020 </p>
     </div>
     <script src="js/blog.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
