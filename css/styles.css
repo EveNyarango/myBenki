@@ -1,15 +1,9 @@
-@font-face{
-  src: url(../font/PermanentMarker-Regular.ttf);
-  font-family: permanent;
-  font-family: antic;
-  src: url(../font/AnticSlab-Regular.ttf);
-
-}
+ 
 body{
   text-align: center;
 }
 .home {
-  /* background-image: url(../images/bennete.jpeg); */
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-color: turquoise;
@@ -17,6 +11,7 @@ body{
 #p1{
   text-align: center;
   font-size: 20px;
+  text-align: center;
   font-family: antic;
 }
 #p2{
@@ -24,37 +19,13 @@ body{
   font-size: 15px;
 }
 
-/* h1 {
-  text-align: center;
-  color: white;
-  font-family: permanent;
-}
-h2{
-  text-align: center;
-  font-family: permanent;
-  font-size: 40px;
-  color: white;
-}
-h3{
-  color: wheat;
-  text-align: center;
-} */
 
-/* p {
-  text-align: center;
-  color: turquoise;
-  font-size: medium;
-} */
 #row{
   text-align: center;
 }
 #height{
   height: 400px;
 }
-
-/* footer {
-  display: flex;
-} */
 
 .carousel-inner img {
   margin: auto;
