@@ -34,11 +34,11 @@ $(document).ready(function () {
         let business = parseInt($("#bizna").val());
         let bonus = parseInt($("#bonus").val());
         let others = parseInt($("#others1").val());
-    
+
 
         let NewIncome = new Income(salary, wages, business, bonus, others);
         let NewTotalIncome = NewIncome.TotalIncome()
-        alert("Your total income is "  + NewTotalIncome)
+        alert("Your total income is " + NewTotalIncome)
 
         let rent = parseInt($("#rent").val());
         let food = parseInt($("#food").val());
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
         let NewExpenditure = new Expenditure(rent, food, medical, fees, entertainment, others2)
         let NewTotalExpenditure = NewExpenditure.TotalExpenditure()
-        alert("Your total expenditure is " +  NewTotalExpenditure)
+        alert("Your total expenditure is " + NewTotalExpenditure)
 
 
 
@@ -58,25 +58,24 @@ $(document).ready(function () {
 
             alert("Congratulations " + "your expenditure for this month " + "less than your income." + " You have more to saves " + " for future ")
         } else if (NewTotalIncome == NewTotalExpenditure) {
-alert("Awesome")
+            alert("Awesome")
         } else {
-            alert("Oops" + "this month your expenditure was more than income." + "What happened?")
+            alert("Oops " + " this month your expenditure was more than income. " + " What happened? " + " For more information " + "book a training on Financial Literacy with MyBenki")
         }
 
-        
-            $("#salary").val("");
-            $("#wages").val("");
-            $("#bizna").val("");
-            $("#bonus").val("");
-            $("#others1").val("");
-            $("#rent").val("");
-            $("#food").val("");
-            $("#medical").val("");
-            $("#fees").val("");
-            $("#entertain").val("");
-            $("#others2").val("");
-    
-    })
-   
-})
 
+        $("#salary").val("");
+        $("#wages").val("");
+        $("#bizna").val("");
+        $("#bonus").val("");
+        $("#others1").val("");
+        $("#rent").val("");
+        $("#food").val("");
+        $("#medical").val("");
+        $("#fees").val("");
+        $("#entertain").val("");
+        $("#others2").val("");
+
+    })
+
+})
