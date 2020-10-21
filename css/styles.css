@@ -1,5 +1,6 @@
 body{
-    background-color: #008481;
+    /* background-color: #008481; */
+   background-color:lightcoral;
 }
 header{
     background-image: url(../images/logo.jpg);
@@ -9,6 +10,10 @@ header{
     margin-top: 40px;
     text-align: left;
     font-size: 24px;
+}
+#bills{
+  height:400px;
+  width:500px;
 }
 .image{
     text-align: center;
@@ -26,4 +31,16 @@ button{
 }
 .row{
     display: inline;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+.advise{
+  font-size: larger;
 }
