@@ -52,7 +52,7 @@ $(document).ready(function () {
         // alert("Your total expenditure is " + NewTotalExpenditure)
         alert("Your total expenditure for the month of " + month + " is " + NewTotalExpenditure)
 
-
+        var difference = (NewTotalIncome - NewTotalExpenditure)
 
 
         if (NewTotalIncome > NewTotalExpenditure) {
@@ -77,6 +77,8 @@ $(document).ready(function () {
         $("#entertain").val("");
         $("#others2").val("");
 
+    document.getElementById("diff").innerHTML = difference
+    // $( "#diff" ).append(difference) ;
     })
 
 })
